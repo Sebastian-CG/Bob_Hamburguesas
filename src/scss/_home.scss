@@ -1,21 +1,23 @@
 .home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexbox(center, center);
 
-  img {
-    width: 250px;
+  figure {
+    @include flexbox(center, center);
+
+    img {
+      width: 250px;
+    }
   }
 }
 
 @media (min-width: $tablet) {
-  .home img {
+  .home figure img {
     width: 350px;
   }
 }
 
-@media  (min-width: $desktop){
-  .home img {
+@media (min-width: $desktop) {
+  .home figure  img {
     width: 450px;
   }
 }
