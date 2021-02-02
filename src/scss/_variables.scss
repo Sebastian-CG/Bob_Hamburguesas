@@ -6,3 +6,9 @@ $gris_claro:   #EEEEEE;
 
 $desktop: 1000px;
 $tablet:  600px;
+
+@mixin flexbox($par1, $par2) {
+  display: flex;
+  justify-content: $par1;
+  align-items: $par2;
+}
